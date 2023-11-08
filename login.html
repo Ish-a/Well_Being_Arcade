@@ -1,0 +1,76 @@
+<!-- FILEPATH: c:\Users\Aditya\Desktop\login.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <style>
+    body {
+      background-image: url("/images/bg2.jpg");
+      background-size: cover;
+      
+    background-repeat: no-repeat;
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      text-align: center;
+      color: white;
+      margin-top: 50px;
+    }
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+      color: #333;
+    }
+    input[type="text"],
+    input[type="password"],
+    select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #3e8e41;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align: center; color: white; margin-top: 50px; font-size: 3em; text-shadow: 2px 2px #333;">Login to Well Being Arcade</h1>
+  <!-- <form action="login.php" method="post"> -->
+  <form>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required><br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br><br>
+    <label for="usertype">Login as:</label>
+    <select id="usertype" name="usertype">
+      <option value="user">User</option>
+      <option value="admin">Admin</option>
+    </select><br><br>              
+    <a href="index.html">Login</a>
+    <!-- <input type="submit" value="Login">  -->
+  </form>
+</body>
+</html>

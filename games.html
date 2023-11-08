@@ -1,0 +1,102 @@
+<!-- FILEPATH: /C:/Users/Aditya/Desktop/games.html -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous" />
+    <title>Kids Game</title>
+    <style>
+      body {
+        background-color: #f2f2f2;
+        font-family: Arial, sans-serif;
+      }
+      #container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      #game-image {
+        max-width: 100%;
+        max-height: 80%;
+        margin-bottom: 20px;
+      }
+      #play-button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease-in-out;
+      }
+      #play-button:hover {
+        background-color: #3e8e41;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+        transform: translateY(-3px);
+      }
+    </style>
+  </head>
+  <body>
+
+    <!--navbar-->
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary bg-dark"
+      data-bs-theme="dark"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="">Well-being Arcade</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/games.html">Games</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/FR.html">Report</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Mindful activities.html">Mindful activities</a>
+            </li>
+          </ul>
+          
+          <div class="mx-2">
+            <!--mx-2 here is x axis me 2 ki margin-->
+            <button
+              class="btn btn-danger"
+              data-bs-toggle="modal"
+              data-bs-target="#loginModal">
+              
+              <a href="login.html" style="text-decoration: none; color: white;">Login</a>
+            </button>
+            <button
+              class="btn btn-danger"
+              data-bs-toggle="modal"
+              data-bs-target="#signupModal"
+            >
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div id="container">
+      <img id="game-image" src="https://veryutils.com/image/cache/mpseller/customer-57/20200712-104206-228x228.png" alt="Game Image">
+      <a href="#" id="play-button">Play Game</a>
+    </div>
+  </body>
+</html>
