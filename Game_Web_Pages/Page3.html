@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page3</title>
+    <style>
+        .button {
+            background-color: #000000;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            margin: 31px 2px;
+            cursor: pointer;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="display: block;margin-right: auto; width: 31%;margin-left: auto; padding-top: 7%;">Play As</h1>
+    <div class="box" style="padding: 23px 494px;">
+        <img src="https://ik.imagekit.io/ijb85a2qd/boy.png?updatedAt=1700458661965" alt="boy character"
+            style="padding: 0 31px;">
+        <img src="https://ik.imagekit.io/ijb85a2qd/Girl.png?updatedAt=1700458662188" alt="girl character"
+            style="padding: 0 31px;">
+        <img src="https://ik.imagekit.io/ijb85a2qd/ninja.png?updatedAt=1700458661949" alt="ninja character"
+            style="padding: 0 31px;">
+    </div>
+
+    <h1 style="display: block;margin-right: auto; width: 31%;margin-left: auto; padding-top: 4%;">Enter Your Name</h1>
+
+    <label for="Name"></label>
+    <input type="text" id="Name" name="Name" size="40" placeholder="Chota Bheem..." style="
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    padding: 11px 44px;
+    align-self: center;
+    display: block;">
+
+    <button class="button" onclick="handlePage3()"
+        style="margin-left: auto; margin-right: 47%; display: block;">Play</button>
+    <script>
+        function handlePage3() {
+            window.location.replace("page4.html")
+        }
+    </script>
+</body>
+
+</html>
