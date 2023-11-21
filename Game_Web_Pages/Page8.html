@@ -22,7 +22,7 @@
 <body>
     <!--character-->
     <div>
-        <img src="Game elements/boy.png" alt="Chracter" style="
+        <img src="../Game elements/boy.png" alt="Chracter" style="
         margin-right: auto;
         margin-left: auto;
         display: block;
@@ -36,11 +36,12 @@
 
 
     <!--buttons-->
-    <button class="button" onclick="handlePage8()" style="margin-left: auto; margin-right: 705px; display: block; width: 7%; padding: 24px;">Play for 4 Hours</button>
-    <button class="button" onclick="handlePage8()" style="margin-left: auto; margin-right: 705px; display: block; width: 7%; padding: 24px;">Play for 2 Hours</button>
-    <button class="button" onclick="handlePage8()" style="margin-left: auto; margin-right: 705px; display: block; width: 7%; padding: 25px;">Play for 1 Hour</button>
+    <button class="button" value="" id="Option1" onclick="saveAns1()" style="margin-left: auto; margin-right: 705px; display: block; width: 7%; padding: 24px;">Play for 4 Hours</button>
+    <button class="button" id="Option2" onclick="saveAns1()" style="margin-left: auto; margin-right: 705px; display: block; width: 7%; padding: 24px;">Play for 2 Hours</button>
+    <button class="button" id="Option3" onclick="saveAns1()" style="margin-left: auto; margin-right: 705px; display: block; width: 7%; padding: 25px;">Play for 1 Hour</button>
     <script>
-        function handlePage8() {
+        function saveAns1() {
+
             window.location.replace("Page9.html")  
         }
     </script>

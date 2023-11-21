@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Path Selection</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+
+        .content {
+            margin-top: 4em;
+        }
+
+        .circle-button {
+            display: inline-block;
+            background-color: #fff;
+            border: 2px solid #000;
+            border-radius: 50%;
+            width: 150px; /* Set the width and height for the circular container */
+            height: 150px;
+            margin: 2em 1em;
+            cursor: pointer;
+            overflow: hidden; /* Clip the content inside the circle */
+        }
+
+        .circle-button img {
+            width: 100%; /* Ensure the image fills the circular container */
+            height: auto;
+            display: block;
+        }
+
+        .path-text {
+            font-size: 18px;
+        }
+
+        .selection-box {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+            width: max-content;
+            height: max-content;
+            position: absolute;
+            left: 45%;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <button class="circle-button">
+            <img src="../Game elements/image 21 (1).svg" alt="Forest">
+        </button>
+        <div class="path-text">
+            Easy Path with no Hassles and a bag of silver coins.
+        </div>
+
+        <button class="circle-button">
+            <img src="../Game elements/image 23.svg" alt="Sunset">
+        </button>
+        <div class="path-text">
+            Path with most Hassles but a gold cave at the end.
+        </div>
+
+        <button class="circle-button">
+            <img src="../Game elements/image 22.svg" alt="Jungle">
+        </button>
+        <div class="path-text">
+            Path with little Hassles but a chest of gold.
+        </div>
+<br><br>
+        <div class="selection-box">
+            Select a path 👦🏼
+        </div>
+    </div>
+    <script>
+        setInterval(() => {
+            window.location.replace("Page28.html")
+        }, 4000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Science Project</title>
+    <style>
+        *{
+            font-size: 50%;
+        }
+        body {
+            background-color: beige;
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+            font-size:20cap;
+            text-align: center;
+        }
+
+        .content {
+            margin-top: 3em; /* Decrease the gap between text and circles */
+        }
+
+        .text {
+            font-size: 24px;
+            margin-bottom: 1em; /* Decrease the gap between text and circles */
+        }
+
+        .circle-button {
+            display: inline-block;
+            background-color: pink; /* Pink for teacher */
+            border: none;
+            border-radius: 50%;
+            padding: 30px; /* Increase the size of the circle */
+            margin: 0.5em; /* Decrease the gap between circles */
+            cursor: pointer;
+        }
+
+        .circle-button span {
+            font-size: 36px; /* Increase the size of the icon */
+        }
+
+        .action-text {
+            font-size: 18px;
+            margin-bottom: 1em; /* Decrease the gap between text and circles */
+        }
+
+        .submit-button {
+            background-color: grey;
+            border: none;
+            border-radius: 70%;
+            padding: 20px; /* Increase the size of the circle */
+            display: inline-block;
+            margin: 0.5em; /* Decrease the gap between circles */
+            cursor: pointer;
+        }
+
+        .submit-button a {
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <br><br><br>
+    <div class="content">
+        <div class="text">
+            You created a science project with a lot of hard work.
+        </div><br><br><br>
+
+        <button class="circle-button">
+            <span>👩‍🏫</span>
+        </button>
+        <div class="action-text">
+            Show it to your teacher.
+        </div>
+<br>
+        <button class="circle-button" style="background-color: violet;"> 
+            <span>👪</span>
+        </button>
+        <div class="action-text">
+            Show it to your Parents.
+        </div>
+<br>
+        <button class="submit-button">
+            <a href="#">SUBMIT <br> PROJECT</a>
+        </button>
+    </div>
+    <script>
+        setInterval(() => {
+            window.location.replace("Page26.html")
+        }, 4000);
+    </script>
+</body>
+</html>

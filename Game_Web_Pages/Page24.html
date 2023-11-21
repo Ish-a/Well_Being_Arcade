@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Page</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .content {
+            text-align: center;
+        }
+
+        .title {
+            font-size: 64px;
+            margin-top: 20px;
+        }
+
+        .circle-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .circle {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+
+        .circle-text {
+            color: white;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="title">
+            What will you do??
+        </div>
+        <div class="circle-container">
+            <div class="circle" onclick="action('Tell Teacher that he Cheated')">
+                <div class="circle-text">Tell Teacher that he Cheated</div>
+            </div>
+            <div class="circle" onclick="action('Let it be as he is your friend')">
+                <div class="circle-text">Let it be as he is your friend</div>
+            </div>
+            <div class="circle" onclick="action('Confront him and break the friendship')">
+                <div class="circle-text">Confront him and break the friendship</div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function action(text) {
+            alert('You chose: ' + text);
+        }
+        setInterval(() => {
+            window.location.replace("Page25.html")
+        }, 4000);
+    </script>
+</body>
+</html>
