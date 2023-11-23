@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page8</title>
     <style>
         .button {
-          background-color: #000000;
-          color: white;
-          padding: 15px 32px;
-          text-align: center;
-          display: inline-block;
-          font-size: 16px;
-          margin: 15px 2px;
-          cursor: pointer;
-          border-radius: 300px;
+            background-color: #000000;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            margin: 15px 2px;
+            cursor: pointer;
+            border-radius: 300px;
         }
-
     </style>
 </head>
+
 <body>
     <!--character-->
     <div>
@@ -36,14 +37,37 @@
 
 
     <!--buttons-->
-    <button class="button" value="" id="Option1" onclick="saveAns1()" style="margin-left: auto; margin-right: 705px; display: block; width: 7%; padding: 24px;">Play for 4 Hours</button>
-    <button class="button" id="Option2" onclick="saveAns1()" style="margin-left: auto; margin-right: 705px; display: block; width: 7%; padding: 24px;">Play for 2 Hours</button>
-    <button class="button" id="Option3" onclick="saveAns1()" style="margin-left: auto; margin-right: 705px; display: block; width: 7%; padding: 25px;">Play for 1 Hour</button>
+    <button class="button" value="disagree" id="Option1" onmousemove="myMoveFunction1()"
+        style="margin-left: auto; margin-right: 705px; display: block; width: 7%; padding: 24px;">Play for 4
+        Hours</button>
+    <button class="button" value="disagree" id="Option2" onmousemove="myMoveFunction2()" onclick="saveAns1()"
+        style="margin-left: auto; margin-right: 705px; display: block; width: 7%; padding: 24px;">Play for 2
+        Hours</button>
+    <button class="button" value="agree" id="Option3" onmousemove="myMoveFunction3()"
+        style="margin-left: auto; margin-right: 705px; display: block; width: 7%; padding: 25px;">Play for 1
+        Hour</button>
     <script>
-        function saveAns1() {
-
-            window.location.replace("Page9.html")  
+        function myMoveFunction1() {
+            document.getElementById("Option1").innerHTML = "Get 75%"
+            document.getElementById("Option1").style.background = "green"
         }
+        function myMoveFunction2() {
+            document.getElementById("Option2").innerHTML = "Get 80%"
+            document.getElementById("Option2").style.background = "green"
+        }
+        function myMoveFunction3() {
+            document.getElementById("Option3").innerHTML = "Get 90%"
+            document.getElementById("Option3").style.background = "green"
+        }
+
+        const choice1 = document.querySelectorAll('.button');
+
+        choice1.forEach(el => el.addEventListener('click', event => {
+            localStorage.setItem("response1", event.target.value)
+             window.location.replace("Page9.html")
+        }));
+
     </script>
 </body>
+
 </html>

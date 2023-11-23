@@ -20,7 +20,7 @@
     </style>
 </head>
 
-<body>
+<body onload="localStorage.clear()">
     <h1 style="display: block;margin-right: auto; width: 31%;margin-left: auto; padding-top: 7%;">Play As</h1>
     <div class="box" style="padding: 23px 494px;">
         <img class="profile" id="player1" src="https://ik.imagekit.io/ijb85a2qd/boy.png?updatedAt=1700458661965"
@@ -44,27 +44,31 @@
 
     <button class="button" onclick="handlePage3()"
         style="margin-left: auto; margin-right: 47%; display: block;">Play</button>
+
     <script>
+
         let namediv = document.getElementById('Name')
         namediv.addEventListener('change', (e) => {
             localStorage.setItem("playerName", e.target.value)
-            console.log(localStorage.getItem("playerName"))
         })
 
         const divs = document.querySelectorAll('.profile');
 
         divs.forEach(el => el.addEventListener('click', event => {
-            console.log(event.target.src);
             localStorage.setItem("playerIcon", event.target.src)
         }));
 
-        // document.getElementsByClassName('profile').addEventListener('onclick', (e) => {
-        //     localStorage.setItem("playerProfile", e.target.src)
-        //     console.log(e.target.src)
-        // })
-
         function handlePage3() {
-            window.location.replace("page4.html")
+            console.log(localStorage.getItem("playerName"))
+            if (localStorage.getItem("playerName") === null) {
+                alert("Enter Name")
+            } 
+            if (localStorage.getItem("playerIcon") === null) {
+                alert("Select an Icon")
+            } 
+            if (localStorage.getItem("playerIcon") != null && localStorage.getItem("playerName") != null) {
+                window.location.replace("page4.html")
+            } 
         }
     </script>
 </body>
