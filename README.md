@@ -6,4 +6,4 @@ Our solution encompasses a portal where in a assessment of student's mental heal
 After immense research and surveys from various psychologist and counsellors the questions are developed in such a way that they are relevant to student's life scenarios.
 
 After this assessment students can use the platform for various mindful activities such as Guided Meditation, Journalling, Practising Yoga,etc.
-Check it out here: https://well-being-arcade.000webhostapp.com/
+
